@@ -5,8 +5,49 @@
   <title>小翼龙 项目文档</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .app-name, .navbar-brand {
-        display: none !important;
+    .app-name,
+    .navbar-brand {
+      display: none !important;
+    }
+    .sidebar,
+    .sidebar-toggle {
+      display: none !important;
+    }
+    main {
+      margin-left: 0 !important;
+    }
+
+    /* 正文、标题全部黑色 */
+    .markdown-section {
+      color: #000 !important;
+    }
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4,
+    .markdown-section h5,
+    .markdown-section h6 {
+      color: #000 !important;
+      border-bottom: none !important;
+    }
+    /* 标题里的锚点链接（Docsify 默认蓝色） */
+    .markdown-section h1 a,
+    .markdown-section h2 a,
+    .markdown-section h3 a,
+    .markdown-section h4 a,
+    .markdown-section h5 a,
+    .markdown-section h6 a {
+      color: #000 !important;
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+    /* 正文里的普通链接也改成黑色（如首页文档列表） */
+    .markdown-section a {
+      color: #000 !important;
+      text-decoration: none !important;
+    }
+    .markdown-section strong {
+      color: #000 !important;
     }
   </style>
 </head>
