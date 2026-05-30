@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>小翼龙 项目文档</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <style>
+    .app-name,
+    .navbar-brand {
+      display: none !important;
+    }
+    .sidebar,
+    .sidebar-toggle {
+      display: none !important;
+    }
+    main {
+      margin-left: 0 !important;
+    }
+
+    .markdown-section {
+      color: #000 !important;
+      padding: 16px 20px !important;
+      max-width: 900px !important;
+    }
+
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4,
+    .markdown-section h5,
+    .markdown-section h6 {
+      color: #000 !important;
+      border-bottom: none !important;
+      word-break: break-word;
+    }
+
+    .markdown-section h1 a,
+    .markdown-section h2 a,
+    .markdown-section h3 a,
+    .markdown-section h4 a,
+    .markdown-section h5 a,
+    .markdown-section h6 a {
+      color: #000 !important;
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+
+    .markdown-section a {
+      color: #0052FF !important;
+      text-decoration: underline !important;
+      word-break: break-all;
+    }
+
+    .markdown-section strong {
+      color: #000 !important;
+    }
+
+    /* 表格：手机可左右滑动，不会挤成一团 */
+    .markdown-section table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .markdown-section table th,
+    .markdown-section table td {
+      padding: 8px 10px;
+      min-width: 80px;
+      white-space: normal;
+      word-break: break-word;
+      vertical-align: top;
+    }
+
+    /* 代码块：手机可横滑 */
+    .markdown-section pre {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-size: 13px;
+    }
+
+    /* 手机端优化 */
+    @media (max-width: 768px) {
+      .markdown-section {
+        padding: 12px 14px !important;
+      }
+
+      .markdown-section h1 {
+        font-size: 1.4rem !important;
+      }
+
+      .markdown-section h2 {
+        font-size: 1.2rem !important;
+      }
+
+      .markdown-section h3 {
+        font-size: 1.05rem !important;
+      }
+
+      .markdown-section table {
+        font-size: 12px;
+      }
+
+      .markdown-section table th,
+      .markdown-section table td {
+        padding: 6px 8px;
+        min-width: 70px;
+      }
+
+      .markdown-section blockquote {
+        margin: 0.8em 0;
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      hideSidebar: true,
+      relativePath: false,
+      notFoundPage: true,
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+</body>
+</html>
