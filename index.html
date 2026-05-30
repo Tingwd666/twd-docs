@@ -2,63 +2,72 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>小翼龙 项目文档</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <style>
-    .app-name,
-    .navbar-brand {
-      display: none !important;
-    }
-    .sidebar,
-    .sidebar-toggle {
-      display: none !important;
-    }
-    main {
-      margin-left: 0 !important;
+    .app-name, .navbar-brand, .sidebar, .sidebar-toggle { display: none !important; }
+    main { margin-left: 0 !important; }
+
+    .markdown-section {
+      color: #111 !important;
+      padding: 16px 18px !important;
+      max-width: 900px !important;
+      line-height: 1.7;
     }
 
-    /* 正文、标题全部黑色 */
-    .markdown-section {
-      color: #000 !important;
-    }
-    .markdown-section h1,
-    .markdown-section h2,
-    .markdown-section h3,
-    .markdown-section h4,
-    .markdown-section h5,
-    .markdown-section h6 {
-      color: #000 !important;
+    .markdown-section h1 { font-size: 1.6rem; word-break: break-word; }
+    .markdown-section h2 { font-size: 1.3rem; margin-top: 1.2em; }
+    .markdown-section h3 { font-size: 1.1rem; }
+    .markdown-section h1, .markdown-section h2, .markdown-section h3,
+    .markdown-section h4, .markdown-section h5, .markdown-section h6 {
+      color: #111 !important;
       border-bottom: none !important;
     }
-    /* 标题里的锚点链接（Docsify 默认蓝色） */
-    .markdown-section h1 a,
-    .markdown-section h2 a,
-    .markdown-section h3 a,
-    .markdown-section h4 a,
-    .markdown-section h5 a,
-    .markdown-section h6 a {
-      color: #000 !important;
-      text-decoration: none !important;
-      border-bottom: none !important;
-    }
-    /* 正文里的普通链接也改成黑色（如首页文档列表） */
+
     .markdown-section a {
-      color: #000 !important;
-      text-decoration: none !important;
+      color: #0052FF !important;
+      text-decoration: underline !important;
+      word-break: break-all;
     }
-    .markdown-section strong {
-      color: #000 !important;
+
+    .markdown-section table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-size: 14px;
+    }
+
+    .markdown-section pre {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      .markdown-section { padding: 12px 14px !important; }
+      .markdown-section h1 { font-size: 1.35rem !important; }
+      .markdown-section h2 { font-size: 1.15rem !important; }
+      .markdown-section table { font-size: 12px; }
     }
   </style>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
-      name: '',
+      name: '小翼龙 项目文档',
+      homepage: 'README.md',
       hideSidebar: true,
+      basePath: '/twd-docs-/',
+      relativePath: false,
+      loadSidebar: false,
+      subMaxLevel: 3,
+      notFoundPage: true,
+      externalLinkTarget: '_blank',
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
