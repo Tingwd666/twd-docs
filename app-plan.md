@@ -1,6 +1,6 @@
 # TWD 项目专属 APP 方案
 
-> 完整 PPT 版本：[下载 APP 方案 PPT](https://github.com/Tingwd666/twd-docs-/raw/main/docs/TWD-APP-Plan.pptx)
+> 完整 PPT 版本：[APP 方案 PPT 下载](https://github.com/Tingwd666/twd-docs-/raw/main/docs/TWD-APP-Plan.pptx)
 
 ---
 
