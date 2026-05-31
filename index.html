@@ -5,32 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>小翼龙 项目文档</title>
 
-  <!-- TP 钱包历史记录必须读完整 https 地址 -->
   <link rel="icon" href="https://tingwd666.github.io/twd-docs-/favicon.ico" sizes="32x32">
   <link rel="icon" type="image/png" href="https://tingwd666.github.io/twd-docs-/favicon.png" sizes="192x192">
   <link rel="apple-touch-icon" href="https://tingwd666.github.io/twd-docs-/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="https://tingwd666.github.io/twd-docs-/manifest.json">
-  <meta name="theme-color" content="#0052FF">
-  <meta name="apple-mobile-web-app-title" content="小翼龙">
+  <meta name="theme-color" content="#1a1a2e">
   <meta property="og:title" content="小翼龙 项目文档">
   <meta property="og:image" content="https://tingwd666.github.io/twd-docs-/icon-192.png">
-  <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <style>
     .app-name, .navbar-brand, .sidebar, .sidebar-toggle { display: none !important; }
     main { margin-left: 0 !important; }
-    .markdown-section { color: #111 !important; padding: 16px 18px !important; max-width: 900px !important; line-height: 1.7; }
-    .markdown-section h1 { font-size: 1.6rem; word-break: break-word; }
-    .markdown-section h2 { font-size: 1.3rem; margin-top: 1.2em; }
-    .markdown-section h3 { font-size: 1.1rem; }
+
+    /* 整页背景：与前端一致的深蓝渐变 */
+    html, body {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+      background-attachment: fixed !important;
+      min-height: 100vh;
+    }
+
+    .content, #app, main {
+      background: transparent !important;
+    }
+
+    .markdown-section {
+      color: #e8eef7 !important;
+      padding: 16px 18px !important;
+      max-width: 900px !important;
+      line-height: 1.7;
+    }
+
+    .markdown-section h1 { font-size: 1.6rem; word-break: break-word; color: #ffffff !important; }
+    .markdown-section h2 { font-size: 1.3rem; margin-top: 1.2em; color: #ffffff !important; }
+    .markdown-section h3 { font-size: 1.1rem; color: #f0f4ff !important; }
     .markdown-section h1, .markdown-section h2, .markdown-section h3,
     .markdown-section h4, .markdown-section h5, .markdown-section h6 {
-      color: #111 !important; border-bottom: none !important;
+      border-bottom: none !important;
     }
-    .markdown-section a { color: #0052FF !important; text-decoration: underline !important; word-break: break-all; }
-    .markdown-section table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 14px; }
-    .markdown-section pre { overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 13px; }
+
+    .markdown-section p,
+    .markdown-section li,
+    .markdown-section td,
+    .markdown-section th {
+      color: #e8eef7 !important;
+    }
+
+    .markdown-section a {
+      color: #7dd3fc !important;
+      text-decoration: underline !important;
+      word-break: break-all;
+    }
+
+    .markdown-section strong {
+      color: #ffffff !important;
+    }
+
+    .markdown-section blockquote {
+      border-left: 4px solid #667eea !important;
+      background: rgba(255, 255, 255, 0.06) !important;
+      color: #cbd5e1 !important;
+    }
+
+    .markdown-section code {
+      background: rgba(0, 0, 0, 0.35) !important;
+      color: #a5f3fc !important;
+    }
+
+    .markdown-section pre {
+      background: rgba(0, 0, 0, 0.35) !important;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-size: 13px;
+    }
+
+    .markdown-section table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .markdown-section hr {
+      border-color: rgba(255, 255, 255, 0.15) !important;
+    }
+
     @media (max-width: 768px) {
       .markdown-section { padding: 12px 14px !important; }
       .markdown-section h1 { font-size: 1.35rem !important; }
