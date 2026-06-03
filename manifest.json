@@ -2,19 +2,19 @@
   "name": "小翼龙 项目文档",
   "short_name": "小翼龙",
   "description": "TWD 小翼龙项目官方文档",
-  "start_url": "https://tingwd666.github.io/twd-docs-/",
+  "start_url": "https://tingwd666.github.io/twd-docs/",
   "display": "standalone",
   "background_color": "#0A0E1A",
   "theme_color": "#0052FF",
   "icons": [
     {
-      "src": "https://tingwd666.github.io/twd-docs-/icon-192.png",
+      "src": "https://tingwd666.github.io/twd-docs/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://tingwd666.github.io/twd-docs-/apple-touch-icon.png",
+      "src": "https://tingwd666.github.io/twd-docs/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any maskable"
