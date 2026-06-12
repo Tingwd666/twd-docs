@@ -1,6 +1,6 @@
 # Tiny Winged Dragon
 
-## （列表）
+## 列表
 
 - [小翼龙交流中心](https://m.debox.pro/group?id=75yuxyn8&code=xz8gsx2k) — DeBox 官方群
 - [小翼龙 DAPP](https://tingwd666.github.io/twd-frontend/) — BSC 主网 DApp
