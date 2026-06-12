@@ -1,12 +1,18 @@
 {
   "name": "小翼龙 项目文档",
-  "short_name": "小翼龙",
+  "short_name": "TWD",
   "description": "TWD 小翼龙项目官方文档",
   "start_url": "https://tingwd666.github.io/twd-docs/",
   "display": "standalone",
   "background_color": "#0A0E1A",
   "theme_color": "#0052FF",
   "icons": [
+    {
+      "src": "https://tingwd666.github.io/twd-docs/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "https://tingwd666.github.io/twd-docs/icon-192.png",
       "sizes": "192x192",
