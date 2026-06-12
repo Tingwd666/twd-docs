@@ -30,8 +30,35 @@
 
     .content, #app, main, .markdown-section { background: transparent !important; }
 
-    .markdown-section {
+    /* 全站文字强制白色（覆盖 docsify/vue 标题锚点蓝/绿链） */
+    .markdown-section,
+    .markdown-section *:not(pre):not(code) {
       color: #ffffff !important;
+    }
+
+    section.content .markdown-section h1 a,
+    section.content .markdown-section h2 a,
+    section.content .markdown-section h3 a,
+    section.content .markdown-section h4 a,
+    section.content .markdown-section h5 a,
+    section.content .markdown-section h6 a,
+    .markdown-section h1 a,
+    .markdown-section h2 a,
+    .markdown-section h3 a,
+    .markdown-section h4 a,
+    .markdown-section h5 a,
+    .markdown-section h6 a,
+    .markdown-section a,
+    .markdown-section a:visited,
+    .markdown-section a:hover,
+    .markdown-section a:active,
+    .markdown-section a:focus {
+      color: #ffffff !important;
+      text-decoration: underline !important;
+      word-break: break-all;
+    }
+
+    .markdown-section {
       padding: 16px 18px !important;
       max-width: 900px !important;
       line-height: 1.7;
@@ -41,7 +68,6 @@
       font-size: 1.5rem;
       font-weight: 700;
       word-break: break-word;
-      color: #ffffff !important;
     }
 
     .markdown-section h2 {
@@ -49,38 +75,21 @@
       font-weight: 700;
       margin-top: 1.4em;
       margin-bottom: 0.6em;
-      color: #ffffff !important;
     }
 
-    .markdown-section h3 { font-size: 1.1rem; color: #ffffff !important; }
+    .markdown-section h3 { font-size: 1.1rem; }
     .markdown-section h1, .markdown-section h2, .markdown-section h3,
     .markdown-section h4, .markdown-section h5, .markdown-section h6 {
       border-bottom: none !important;
     }
 
-    .markdown-section p,
-    .markdown-section li,
-    .markdown-section td,
-    .markdown-section th,
-    .markdown-section strong,
-    .markdown-section em { color: #ffffff !important; }
-
-    .markdown-section a,
-    .markdown-section a:visited,
-    .markdown-section a:hover,
-    .markdown-section a:active {
-      color: #ffffff !important;
-      text-decoration: underline !important;
-      word-break: break-all;
-    }
-
     .markdown-section blockquote {
       border-left: 4px solid rgba(255, 255, 255, 0.35) !important;
       background: rgba(255, 255, 255, 0.06) !important;
-      color: #ffffff !important;
     }
 
-    .markdown-section code {
+    .markdown-section code,
+    .markdown-section pre code {
       background: rgba(0, 0, 0, 0.35) !important;
       color: #ffffff !important;
     }
